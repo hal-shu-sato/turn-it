@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Turn it!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div
+      class="modal fade"
+      id="howtojp"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-title-jp"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title-jp">遊び方</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            遊び方
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              閉じる
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="howtoen"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-title-en"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title-en">How to play</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            How to play
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light bg-light navbar-expand fixed-top">
+      <a href="#" class="navbar-brand">Turn it!</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navmenu1"
+        aria-controls="navmenu1"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu1">
+        <div class="navbar-nav">
+          <a
+            class="nav-item nav-link"
+            href="#"
+            data-toggle="modal"
+            data-target="#howtojp"
+            >遊び方</a
+          >
+          <a
+            class="nav-item nav-link"
+            href="#"
+            data-toggle="modal"
+            data-target="#howtoen"
+            >How to play</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+      <div class="form-row">
+        <div class="form-group col-sm-2 offset-sm-2">
+          <label for="player1">Player 1</label>
+          <input
+            type="text"
+            class="form-control"
+            id="player1"
+            placeholder="Player 1"
+          />
+        </div>
+        <div class="form-group col-sm-2">
+          <label for="player2">Player 2</label>
+          <input
+            type="text"
+            class="form-control"
+            id="player2"
+            placeholder="Player 2"
+          />
+        </div>
+        <div class="form-group col-sm-2">
+          <label for="player3">Player 3</label>
+          <input
+            type="text"
+            class="form-control"
+            id="player3"
+            placeholder="Player 3"
+          />
+        </div>
+        <div class="form-group col-sm-2">
+          <label for="player4">Player 4</label>
+          <input
+            type="text"
+            class="form-control"
+            id="player4"
+            placeholder="Player 4"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary mb-3" id="play">
+            Play
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+          <canvas id="canvas" width="540" height="540"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <footer class="w-100 text-center">Copyright &copy; 2020 ato lash</footer>
+    <script src="index.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

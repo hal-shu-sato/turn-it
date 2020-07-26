@@ -1,0 +1,14 @@
+body {
+  margin-top: 3.5rem;
+}
+
+canvas {
+  border: 1px #000000 solid;
+  width: 100%;
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: lightgray;
+  line-height: 4rem;
+}
